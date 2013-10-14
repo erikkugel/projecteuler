@@ -10,12 +10,12 @@
 import math
 
 # Test a prime number using Trial Division (http://en.wikipedia.org/wiki/Trial_division)
-def is_prime_trial_division (number):
-	if number <= 2:
+def is_prime_trial_division (n):
+	if n <= 2:
 		return False
-	max_prime = math.sqrt(number)
+	max_prime = math.sqrt(n)
 	test = 2
-	while number % test != 0:
+	while n % test != 0:
 		if test > max_prime:
 			return True
 		test += 1
